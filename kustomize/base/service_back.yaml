@@ -1,1 +1,13 @@
 
+apiVersion: v1
+kind: Service
+metadata:
+  name: react-app-back
+spec:
+  type: NodePort
+  selector:
+    app: react-app-back
+  ports:
+    - port: 80
+      protocol: TCP
+ 
