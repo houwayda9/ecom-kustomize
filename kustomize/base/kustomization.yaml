@@ -8,7 +8,4 @@ resources:
 
 
 
-images:
-- name: houwayda/ecom-front
-  newName: docker.io/houwayda/ecom-front
-  newTag: 6d8c9316f0be95232b3855b2561429953aeb9be9
+
