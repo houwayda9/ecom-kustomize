@@ -4,6 +4,6 @@ resources:
 
 
 images:
-- name: houwayda/test
-  newName: docker.io/houwayda/test
-  newTag: ef597aa1b81ffe14cf7d205ff7c80e7962f2b634
+- name: houwayda/ecom-front
+  newName: docker.io/houwayda/ecom-front
+  newTag: 6d8c9316f0be95232b3855b2561429953aeb9be9
