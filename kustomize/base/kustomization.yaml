@@ -1,6 +1,11 @@
 resources:
 - deployment_front.yaml
 - service_front.yaml
+- deployment_back.yaml
+- service_back.yaml
+- mongodb_deploy.yaml
+- mongodb_service.yaml
+
 
 
 images:
