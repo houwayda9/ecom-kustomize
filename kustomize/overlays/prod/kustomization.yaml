@@ -4,7 +4,7 @@ bases:
 patches:
   - target:
        kind: Deployment
-       name: react-app
+       name: react-app-back
     patch: |-
        - op: replace
          path: /spec/replicas
@@ -17,6 +17,6 @@ commonLabels:
  env: production
 
 images:
-- name: houwayda/test
-  newName: docker.io/houwayda/prod
+- name: houwayda/ecom-back
+  newName: docker.io/houwayda/ecom-back
   newTag: 0b781c160645287f69b68c62297533e2034cde15
