@@ -8,3 +8,8 @@ images:
 - name: houwayda/ecom-front
   newName: docker.io/houwayda/ecom-front
   newTag: 79035d31f33c8b292e472b245a14ca5e93effd93
+
+images:
+- name: houwayda/ecom-back
+  newName: docker.io/houwayda/ecom-back
+  newTag: 79035d31f33c8b292e472b245a14ca5e93effd93
