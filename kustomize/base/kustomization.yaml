@@ -1,6 +1,6 @@
 resources:
-- deployment.yaml
-- service.yaml
+- deployment_front.yaml
+- service_front.yaml
 
 
 images:
