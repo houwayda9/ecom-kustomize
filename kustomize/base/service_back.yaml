@@ -4,7 +4,7 @@ kind: Service
 metadata:
   name: react-app-back
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: react-app-back
   ports:
