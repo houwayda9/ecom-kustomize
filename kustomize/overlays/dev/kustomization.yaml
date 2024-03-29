@@ -5,6 +5,6 @@ patches:
 - path: replicas.yaml
 
 images:
-- name: houwayda/test
-  newName: docker.io/houwayda/test
-  newTag: a94abc7572f75e2ee0c62ba38b48b9b4a052258d
+- name: houwayda/ecom-front
+  newName: docker.io/houwayda/ecom-front
+  newTag: 6d8c9316f0be95232b3855b2561429953aeb9be9
