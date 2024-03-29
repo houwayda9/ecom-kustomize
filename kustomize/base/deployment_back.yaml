@@ -1,4 +1,3 @@
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,7 +14,7 @@ spec:
     spec:
       containers:
         - name: react-app-back
-          image: houwayda/ecom-back:415b38dc1ee6bd103d6c4549949a320ee7d6d9d4
+          image: houwayda/ecom-back:e04a589cf51011895551494ec5fd270a96b41ace
           imagePullPolicy: Always
           ports:
             - containerPort: 80
