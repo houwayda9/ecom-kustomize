@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: react-app-back
-          image: houwayda/ecom-backt:29fcd51ea82875d0a6e1c99177b1ace84f881d90
+          image: houwayda/ecom-back:415b38dc1ee6bd103d6c4549949a320ee7d6d9d4
           imagePullPolicy: Always
           ports:
             - containerPort: 80
