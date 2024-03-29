@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react-app
+  name: react-app-front
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: react-app
+      app: react-app-front
   template:
     metadata:
       labels:
-        app: react-app
+        app: react-app-front
     spec:
       containers:
-        - name: react-app
-          image: houwayda/test:abab209b6c412e3bbdd1d750065f2a2487f3f2ca
+        - name: react-app-front
+          image: houwayda/ecom-front:6d8c9316f0be95232b3855b2561429953aeb9be9
           imagePullPolicy: Always
           ports:
             - containerPort: 80
