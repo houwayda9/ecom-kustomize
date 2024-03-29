@@ -20,6 +20,7 @@ images:
 - name: houwayda/ecom-front
   newName: docker.io/houwayda/ecom-front
   newTag: 225075d03b9958c92d674e2752e71673aceff8ba
+  
 - name: houwayda/ecom-back
   newName: docker.io/houwayda/ecom-back
   newTag: f462cab645b9e6feb1fc23a926444ccdfeacebb3
