@@ -1,1 +1,23 @@
 
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-app-back
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: react-app-back
+  template:
+    metadata:
+      labels:
+        app: react-app-back
+    spec:
+      containers:
+        - name: react-app-back
+          image: houwayda/ecom-backt:6d8c9316f0be95232b3855b2561429953aeb9be9
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+
+  revisionHistoryLimit: 1
