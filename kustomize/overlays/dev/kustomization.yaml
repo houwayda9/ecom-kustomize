@@ -7,7 +7,7 @@ patches:
 images:
 - name: houwayda/ecom-front
   newName: docker.io/houwayda/ecom-front
-  newTag: bc0962f0777be7a6997f478d52de765d33eba4a2
+  newTag: 696650cbd8af695050b5d0f40d64e2df828aec39
   
 - name: houwayda/ecom-back
   newName: docker.io/houwayda/ecom-back
