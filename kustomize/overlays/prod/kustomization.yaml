@@ -19,7 +19,7 @@ commonLabels:
 images:
 - name: houwayda/ecom-front
   newName: docker.io/houwayda/ecom-front
-  newTag: 79035d31f33c8b292e472b245a14ca5e93effd93
+  newTag: 4ca4782e0e183349c6e5e2b7732cbc1bab5de4b5
 
 
 - name: houwayda/ecom-back
