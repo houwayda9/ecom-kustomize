@@ -1,0 +1,22 @@
+bases:
+- ../../base
+
+patches:
+  - target:
+       kind: Deployment
+       name: react-app
+    patch: |-
+       - op: replace
+         path: /spec/replicas
+         value: 5
+       - op: add
+         path: /spec/template/metadata/labels/app1
+         value: test
+
+commonLabels:
+ env: production
+
+images:
+- name: houwayda/test
+  newName: docker.io/houwayda/prod
+  newTag: 0b781c160645287f69b68c62297533e2034cde15

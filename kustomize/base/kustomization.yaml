@@ -1,0 +1,9 @@
+resources:
+- deployment.yaml
+- service.yaml
+
+
+images:
+- name: houwayda/test
+  newName: docker.io/houwayda/test
+  newTag: ef597aa1b81ffe14cf7d205ff7c80e7962f2b634

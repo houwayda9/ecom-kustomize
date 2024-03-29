@@ -1,0 +1,10 @@
+bases:
+- ../../base
+
+patches:
+- path: replicas.yaml
+
+images:
+- name: houwayda/test
+  newName: docker.io/houwayda/test
+  newTag: a94abc7572f75e2ee0c62ba38b48b9b4a052258d
