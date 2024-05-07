@@ -23,4 +23,4 @@ images:
   
 - name: houwayda/ecom-back
   newName: docker.io/houwayda/ecom_prod
-  newTag: bda24532a564c233d4806c556d7d38eb541c8bf4
+  newTag: 8a90e593e407686028ceafc57b981e2dc28ddf4a
