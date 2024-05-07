@@ -13,8 +13,7 @@ patches:
          path: /spec/template/metadata/labels/app1
          value: test
 
-commonLabels:
- env: production
+
 
 images:
 - name: houwayda/ecom-front
