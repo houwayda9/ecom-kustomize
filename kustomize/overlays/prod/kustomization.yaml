@@ -1,6 +1,14 @@
 bases:
 - ../../base
 
+
+configMapGenerator:
+- name: mykustom-map
+  env: .env
+  behavior: replace  # Ensuring that this ConfigMap replaces any existing ones with the same name
+  options:
+    disableNameSuffixHash: true 
+
 patches:
   - target:
        kind: Deployment
@@ -14,12 +22,7 @@ patches:
          value: test
 
 
-configMapGenerator:
-- name: mykustom-map
-  behavior: replace
-  env: .env
-  options:
-    disableNameSuffixHash: true
+
 
 
 images:
