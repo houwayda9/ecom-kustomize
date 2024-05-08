@@ -13,20 +13,19 @@ spec:
         app: react-app-back
     spec:
       containers:
-        - name: react-app-back
-          image: houwayda/ecom-back:e04a589cf51011895551494ec5fd270a96b41ace
-          imagePullPolicy: Always
-          ports:
-            - containerPort: 80
-           envFrom:
-           - configMapRef:
-              name: mykustom-map
-          resources:
-            requests:
-              memory: "16Mi" 
-              cpu: "50m"    # 500milliCPUs (1/2 CPU)
-            limits:
-              memory: "128Mi"
-              cpu: "100m"
-
+      - name: react-app-back
+        image: houwayda/ecom-back:e04a589cf51011895551494ec5fd270a96b41ace
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+        envFrom:
+        - configMapRef:
+            name: mykustom-map
+        resources:
+          requests:
+            memory: "16Mi"
+            cpu: "50m"    # 500milliCPUs (1/2 CPU)
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
   revisionHistoryLimit: 1
