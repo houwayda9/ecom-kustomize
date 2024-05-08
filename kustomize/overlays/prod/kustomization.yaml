@@ -1,10 +1,5 @@
 resources:
-- ../../base/deployment_front.yaml
-- ../../base/service_front.yaml
-- ../../base/deployment_back.yaml
-- ../../base/service_back.yaml
-- ../../base/mongodb_deploy.yaml
-- ../../base/mongodb_service.yaml
+- ../../base
 
 
 
