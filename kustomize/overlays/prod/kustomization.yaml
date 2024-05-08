@@ -18,6 +18,8 @@ configMapGenerator:
 - name: mykustom-map
   behavior: replace
   env: .env
+  options:
+    disableNameSuffixHash: true
 
 
 images:
