@@ -1,6 +1,3 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-
 resources:
 - deployment_front.yaml
 - service_front.yaml
@@ -8,32 +5,45 @@ resources:
 - service_back.yaml
 - mongodb_deploy.yaml
 - mongodb_service.yaml
-- ../../base
+
+
 
 configMapGenerator:
 - name: mykustom-map
   env: .env
-  behavior: replace  # Ensuring that this ConfigMap replaces any existing ones with the same name
   options:
-    disableNameSuffixHash: true  # Ensures the name stays as 'mykustom-map' without a hash suffix
+    disableNameSuffixHash: true
+
+
+bases:
+- ../../base
 
 patches:
-- target:
-    kind: Deployment
-    name: react-app-back
-  patch: |-
-    - op: replace
-      path: /spec/replicas
-      value: 5
-    - op: add
-      path: /spec/template/metadata/labels/app1
-      value: test
+  - target:
+       kind: Deployment
+       name: react-app-back
+    patch: |-
+       - op: replace
+         path: /spec/replicas
+         value: 5
+       - op: add
+         path: /spec/template/metadata/labels/app1
+         value: test
+
+
+configMapGenerator:
+- name: mykustom-map
+  behavior: replace
+  env: .env
+  options:
+    disableNameSuffixHash: true
+
 
 images:
 - name: houwayda/ecom-front
   newName: docker.io/houwayda/ecom_front_prod
   newTag: a2482e1fd03a8877e02ef98acdab5e7525d619b4
-
+  
 - name: houwayda/ecom-back
   newName: docker.io/houwayda/ecom_back_prod
   newTag: a3dec6a71e645247eea46423536d273cc80f6f9c
