@@ -15,8 +15,7 @@ configMapGenerator:
     disableNameSuffixHash: true
 
 
-bases:
-- ../../base
+
 
 patches:
   - target:
