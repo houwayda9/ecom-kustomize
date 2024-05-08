@@ -8,12 +8,3 @@ resources:
 
 
 
-configMapGenerator:
-  - name: app-config
-    files:
-      - app.properties
-
-secretGenerator:
-  - name: app-secrets
-    literals:
-      - secret-key=SECRET_VALUE_HERE
