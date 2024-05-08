@@ -8,3 +8,6 @@ resources:
 
 
 
+configMapGenerator:
+- name: mykustom-map
+  env: .env
