@@ -5,7 +5,7 @@ resources:
 - service_back.yaml
 - mongodb_deploy.yaml
 - mongodb_service.yaml
-
+- .env
 
 
 configMapGenerator:
