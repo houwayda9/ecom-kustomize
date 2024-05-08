@@ -1,4 +1,5 @@
 resources:
+- ../../base
 - deployment_front.yaml
 - service_front.yaml
 - deployment_back.yaml
