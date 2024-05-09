@@ -15,7 +15,8 @@ secretGenerator:
   behavior: replace
   envs:
   - .secrets_prod
-
+  options:
+    disableNameSuffixHash: true
 
 patches:
   - target:
