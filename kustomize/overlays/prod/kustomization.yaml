@@ -5,7 +5,8 @@ resources:
 
 configMapGenerator:
 - name: mykustom-map
-  env: .env
+  behavior: replace
+  env: .env_PROD
   options:
     disableNameSuffixHash: true
 
@@ -25,12 +26,7 @@ patches:
          value: test
 
 
-configMapGenerator:
-- name: mykustom-map
-  behavior: replace
-  env: .env_PROD
-  options:
-    disableNameSuffixHash: true
+
 
 
 images:
