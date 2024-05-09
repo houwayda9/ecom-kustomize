@@ -21,6 +21,8 @@ spec:
         envFrom:
         - configMapRef:
             name: mykustom-map
+        - secretRef:
+            name: myapp-secrets
         resources:
           requests:
             memory: "16Mi"
