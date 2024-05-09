@@ -28,7 +28,7 @@ patches:
 configMapGenerator:
 - name: mykustom-map
   behavior: replace
-  env: .env
+  env: .env_PROD
   options:
     disableNameSuffixHash: true
 
