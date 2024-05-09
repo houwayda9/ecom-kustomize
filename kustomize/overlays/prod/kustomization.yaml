@@ -12,6 +12,7 @@ configMapGenerator:
 
 secretGenerator:
 - name: myapp-secrets
+  behavior: replace
   envs:
   - .secrets_prod
 
