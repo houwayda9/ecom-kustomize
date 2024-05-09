@@ -6,7 +6,7 @@ resources:
 configMapGenerator:
 - name: mykustom-map
   behavior: replace
-  env: .env_PROD
+  env: .env_prod
   options:
     disableNameSuffixHash: true
 
