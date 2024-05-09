@@ -13,3 +13,8 @@ configMapGenerator:
   env: .env
   options:
     disableNameSuffixHash: true
+
+secretGenerator:
+- name: user-pass
+  envs:
+  - .secrets
