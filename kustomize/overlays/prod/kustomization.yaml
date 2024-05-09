@@ -10,7 +10,10 @@ configMapGenerator:
   options:
     disableNameSuffixHash: true
 
-
+secretGenerator:
+- name: user-pass
+  envs:
+  - .secret_prod
 
 
 patches:
