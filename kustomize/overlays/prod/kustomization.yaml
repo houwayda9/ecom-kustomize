@@ -13,7 +13,7 @@ configMapGenerator:
 secretGenerator:
 - name: myapp-secrets
   envs:
-  - .secret_prod
+  - .secrets_prod
 
 
 patches:
