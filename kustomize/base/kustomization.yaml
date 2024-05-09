@@ -15,6 +15,6 @@ configMapGenerator:
     disableNameSuffixHash: true
 
 secretGenerator:
-- name: user-pass
+- name: myapp-secrets
   envs:
   - .secrets
