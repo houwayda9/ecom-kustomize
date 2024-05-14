@@ -8,13 +8,13 @@ resources:
 
 
 
-configMapGenerator:
-- name: mykustom-map
-  env: .env
-  options:
-    disableNameSuffixHash: true
+#configMapGenerator:
+#- name: mykustom-map
+#  env: .env
+# options:
+#    disableNameSuffixHash: true
 
 secretGenerator:
 - name: myapp-secrets
   envs:
-  - .secrets
+  - .env
