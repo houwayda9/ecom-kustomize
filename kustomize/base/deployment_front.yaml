@@ -17,7 +17,18 @@ spec:
           image: houwayda/ecom-front:6d8c9316f0be95232b3855b2561429953aeb9be9
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
-
+          - containerPort: 80
+          envFrom:
+        
+        - secretRef:
+            name: myapp-secrets
+        resources:
+          requests:
+            memory: "16Mi"
+            cpu: "50m"    # 500milliCPUs (1/2 CPU)
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
   revisionHistoryLimit: 1
+
 
