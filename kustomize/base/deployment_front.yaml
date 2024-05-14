@@ -19,7 +19,8 @@ spec:
           ports:
           - containerPort: 80
           envFrom:
-        
+        - configMapRef:
+            name: mykustom-map
         - secretRef:
             name: myapp-secrets
         resources:
