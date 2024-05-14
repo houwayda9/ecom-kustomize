@@ -14,7 +14,7 @@ secretGenerator:
 - name: myapp-secrets
   behavior: replace
   envs:
-  - .secrets_prod
+  - .env_prod
   options:
     disableNameSuffixHash: true
 
